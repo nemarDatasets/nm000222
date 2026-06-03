@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000222-blue)](https://doi.org/10.82901/nemar.nm000222)
+
 # Air conditioner control experiment (10 subjects, 4 classes, 25 EEG ch)
 
 Air conditioner control experiment (10 subjects, 4 classes, 25 EEG ch).
