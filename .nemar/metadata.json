@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "Air conditioner control experiment (10 subjects, 4 classes, 25 EEG ch)",
+  "description": "This dataset comprises EEG recordings from 10 healthy subjects performing a P300-based brain-computer interface task for home appliance control. The experiment employed a visual oddball paradigm with 25-channel EEG acquisition at 500 Hz, featuring target and non-target stimulus classifications. The dataset includes 50 training and 30 testing trials per subject, with visual feedback provided during online BCI operation.",
+  "methods_description": "EEG data were acquired using a 25-channel actiCHamp system (Brain Products) at 500 Hz sampling rate with linked mastoid reference. Electrodes were positioned according to the standard 10-20 montage (Fp1, Fpz, Fp2, F7, F3, Fz, F4, F8, FC5, FC1, FC2, FC6, C3, Cz, C4, CP5, CP1, CP2, CP6, P3, Pz, P4, O1, Oz, O2). The paradigm employed a visual oddball design with 750 ms stimulus onset asynchrony and 1 s trial duration, with visual feedback presented on an LCD display.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Jongmin Lee": {},
     "Minju Kim": {},
@@ -14,6 +19,32 @@
     "Laehyun Kim": {},
     "Sung-Phil Kim": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "oddball paradigm"
+    },
+    {
+      "term": "home appliance control"
+    },
+    {
+      "term": "visual stimulation"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.3389/fnhum.2024.1320457",
@@ -26,11 +57,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000222",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -39,51 +65,29 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000222",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "title": "Air conditioner control experiment (10 subjects, 4 classes, 25 EEG ch)",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "433.2 MB (306 files)"
+    "848.2 MB (622 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from 10 healthy subjects performing a P300-based brain-computer interface task for home appliance control. The experiment employed a visual oddball paradigm with 25-channel EEG acquisition at 500 Hz, featuring target and non-target stimulus classifications. Data were collected in a laboratory setting with online visual feedback, yielding 50 training and 30 testing trials per subject.",
-  "methods_description": "EEG data were acquired using a 25-channel actiCHamp system (Brain Products) at 500 Hz sampling rate with linked mastoid reference and standard 10-20 electrode montage. Subjects performed a P300 oddball task with visual flash stimuli presented on an LCD display at 750 ms stimulus onset asynchrony. The paradigm involved target and non-target classifications with online visual feedback in a laboratory environment.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    },
-    {
-      "term": "oddball paradigm"
-    },
-    {
-      "term": "home appliance control"
-    }
-  ],
-  "source_hash": "4d1b470eda84f00b0488c8b1df8315ecc9f8578805690c0ea7eb9658c194c062"
+  "source_hash": "f691bfe5fef728dc316b0955b174fc0b7807f5fe962602187f78ea2985e45ddc"
 }
