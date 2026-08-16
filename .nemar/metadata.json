@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Air conditioner control experiment (10 subjects, 4 classes, 25 EEG ch)",
-  "description": "This dataset comprises EEG recordings from 10 healthy subjects performing a P300-based brain-computer interface task for home appliance control. The experiment employed a visual oddball paradigm with 25-channel EEG acquisition at 500 Hz, featuring target and non-target stimulus classifications. The dataset includes 50 training and 30 testing trials per subject, with visual feedback provided during online BCI operation.",
-  "methods_description": "EEG data were acquired using a 25-channel actiCHamp system (Brain Products) at 500 Hz sampling rate with linked mastoid reference. Electrodes were positioned according to the standard 10-20 montage (Fp1, Fpz, Fp2, F7, F3, Fz, F4, F8, FC5, FC1, FC2, FC6, C3, Cz, C4, CP5, CP1, CP2, CP6, P3, Pz, P4, O1, Oz, O2). The paradigm employed a visual oddball design with 750 ms stimulus onset asynchrony and 1 s trial duration, with visual feedback presented on an LCD display.",
+  "description": "This dataset comprises EEG recordings from 10 healthy subjects performing a P300-based brain-computer interface task for home appliance control. The experiment employed a visual oddball paradigm with 25-channel EEG acquisition at 500 Hz, featuring target and non-target stimulus classifications. Data were collected in a laboratory setting with online visual feedback, yielding 50 training and 30 testing trials per subject. The dataset is preprocessed and derivative in nature. Published in Frontiers in Human Neuroscience (2024).",
+  "methods_description": "EEG data were acquired using a 25-channel actiCHamp system (Brain Products) at 500 Hz sampling rate with linked mastoid reference and standard 10-20 electrode montage. Subjects performed a P300 oddball task with visual flash stimuli presented at 750 ms stimulus onset asynchrony. The paradigm involved target and non-target classifications with online visual feedback in a laboratory environment.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -24,25 +24,31 @@
       "term": "EEG"
     },
     {
+      "term": "P300"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "oddball paradigm"
     },
     {
-      "term": "oddball paradigm"
+      "term": "visual oddball"
     },
     {
       "term": "home appliance control"
     },
     {
-      "term": "visual stimulation"
+      "term": "actiCHamp"
+    },
+    {
+      "term": "Brain Products"
     }
   ],
   "related_identifiers": [
@@ -78,7 +84,7 @@
     "eeg"
   ],
   "sizes": [
-    "848.2 MB (622 files)"
+    "1.1 GB (934 files)"
   ],
   "formats": [
     ".bdf",
@@ -89,5 +95,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "f691bfe5fef728dc316b0955b174fc0b7807f5fe962602187f78ea2985e45ddc"
+  "source_hash": "b8dced78f09f429f41d7d2a6df3956f2aa32d0b92ccf1532aea7df0465f8ff00"
 }
