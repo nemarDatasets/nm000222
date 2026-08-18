@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Air conditioner control experiment (10 subjects, 4 classes, 25 EEG ch)",
-  "description": "This dataset comprises EEG recordings from 10 healthy subjects performing a P300-based brain-computer interface task for home appliance control. The experiment employed a visual oddball paradigm with 25-channel EEG acquisition at 500 Hz, featuring target and non-target stimulus classifications. Data were collected in a laboratory setting with online visual feedback, yielding 50 training and 30 testing trials per subject. The dataset is preprocessed and derivative in nature. Published in Frontiers in Human Neuroscience (2024).",
-  "methods_description": "EEG data were acquired using a 25-channel actiCHamp system (Brain Products) at 500 Hz sampling rate with linked mastoid reference and standard 10-20 electrode montage. Subjects performed a P300 oddball task with visual flash stimuli presented at 750 ms stimulus onset asynchrony. The paradigm involved target and non-target classifications with online visual feedback in a laboratory environment.",
+  "description": "This dataset comprises EEG recordings from 10 healthy subjects performing a P300-based brain-computer interface task for home appliance control. Participants responded to visual stimuli in a binary oddball paradigm (Target/NonTarget classification) while 25-channel EEG was recorded at 500 Hz using active electrodes in a standard 10-20 montage. The dataset includes 50 training and 30 testing trials per subject, providing a benchmark resource for P300-based BCI research and algorithm development.",
+  "methods_description": "EEG data were acquired using an actiCHamp system (Brain Products) with 25 active electrodes positioned according to the standard 10-20 montage and referenced to linked mastoids. Sampling rate was 500 Hz with a 60 Hz line frequency. Participants performed a visual oddball task with a stimulus onset asynchrony of 750 ms, responding to target and non-target flash stimuli presented on an LCD display. Each subject completed one session with 50 training and 30 testing blocks, with trial duration of 1.0 second.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -24,31 +24,31 @@
       "term": "EEG"
     },
     {
-      "term": "P300"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "oddball paradigm"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "visual oddball"
+      "term": "oddball paradigm"
     },
     {
       "term": "home appliance control"
     },
     {
-      "term": "actiCHamp"
+      "term": "visual stimulation"
     },
     {
-      "term": "Brain Products"
+      "term": "Healthy"
+    },
+    {
+      "term": "ERP"
     }
   ],
   "related_identifiers": [
@@ -95,5 +95,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "b8dced78f09f429f41d7d2a6df3956f2aa32d0b92ccf1532aea7df0465f8ff00"
+  "source_hash": "3fedfabb83cb29064e3a29a747fa295f9534f406a6c2b0bd874fb51b8a4bc165"
 }
