@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Air conditioner control experiment (10 subjects, 4 classes, 25 EEG ch)",
-  "description": "This dataset comprises EEG recordings from 10 healthy subjects performing a P300-based brain-computer interface task for home appliance control. Participants responded to visual stimuli in a binary oddball paradigm (Target/NonTarget classification) while 25-channel EEG was recorded at 500 Hz using active electrodes in a standard 10-20 montage. The dataset includes 50 training and 30 testing trials per subject, providing a benchmark resource for P300-based BCI research and algorithm development.",
-  "methods_description": "EEG data were acquired using an actiCHamp system (Brain Products) with 25 active electrodes positioned according to the standard 10-20 montage and referenced to linked mastoids. Sampling rate was 500 Hz with a 60 Hz line frequency. Participants performed a visual oddball task with a stimulus onset asynchrony of 750 ms, responding to target and non-target flash stimuli presented on an LCD display. Each subject completed one session with 50 training and 30 testing blocks, with trial duration of 1.0 second.",
+  "description": "EEG recordings from 10 healthy participants using a visual P300 (oddball) brain-computer interface to control a home appliance (an air conditioner) with four selectable commands. Data were acquired at 500 Hz from 25 scalp channels, with 50 training and 30 testing blocks per subject. The dataset supports research on ERP-based BCIs and inter-subject transfer learning for home appliance control.",
+  "methods_description": "EEG was recorded with an actiCHamp (Brain Products) active-electrode system at 500 Hz from 25 channels placed according to the 10-20 system, referenced to linked mastoids. Visual flash stimuli were presented on an LCD display in a 4-class oddball paradigm with a 750 ms stimulus onset asynchrony. Each subject completed 50 training and 30 online testing blocks with visual feedback.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -24,31 +24,26 @@
       "term": "EEG"
     },
     {
+      "term": "P300"
+    },
+    {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "oddball paradigm"
     },
     {
       "term": "home appliance control"
     },
     {
-      "term": "visual stimulation"
+      "term": "oddball paradigm"
     },
     {
-      "term": "Healthy"
-    },
-    {
-      "term": "ERP"
+      "term": "transfer learning"
     }
   ],
   "related_identifiers": [
@@ -84,7 +79,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.1 GB (934 files)"
+    "1.04 GB (934 files)"
   ],
   "formats": [
     ".bdf",
